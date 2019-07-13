@@ -1,0 +1,117 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+/*ESTILOS GENERALES AL BODY*/
+body{
+	font-family: Hind, sans-serif;
+}
+/*ENCABEZADO*/
+header{
+	position: absolute;
+	margin: 1%;
+	width: 98%;
+	display: flex;
+	align-items: center;
+	background-color: black;	
+	font-weight: bold;
+	border-radius: 2vw;
+}
+
+.logo_link {
+
+	margin: 1vw 2vw;
+
+}
+
+.search_bar {
+	padding: 0.5vw;
+	width: 20vw;
+	height: 1vw;
+	margin: 0px 0.5vw;
+	border-radius: .8vw;
+}
+
+.pic_user div{
+	position: absolute;
+	float: right;
+	margin-right: 0! important;
+}
+
+.pic_user img{
+	border-radius: 30px;
+}
+
+header div {
+	display: flex;
+	justify-content: center;
+	
+}
+
+header ul{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+header li{
+	list-style-type: none;
+	background-color: white;
+	padding: 0 1vw;
+	margin: 0px 2vw;
+	border-radius: .8vw;
+
+}
+
+/*FOOTER*/
+
+footer{
+	position: absolute;
+  	left: 0;
+  	bottom: 0;
+  	width: 100%;
+  	background-color: black;
+}
+
+footer ul{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+footer li{
+	list-style-type: none;
+	background-color: white;
+}
+
+/*LINKS EN HEADER Y FOOTER*/
+
+.link_hf{
+	text-decoration: none;
+	font-size: 1.5vw;
+	color:red;
+	font-weight: bold;
+	position: relative;mix-blend-mode: multiply; /*modos de fusion como psd, que cyan y rojo dan negro*/
+}
+/*EL SPA SIRVE PARA COLOREAR PARTES DEL TEXTO, LO INVESTIGUÉ PARA VER CÓMO HACER QUE CAMBIARA EL TEXTO CUANDO SE VA A PULSAR*/
+span{
+	color: cyan;
+	position: absolute;
+	left: 0;
+	top:0;
+	mix-blend-mode: multiply; /*modos de fusion como psd, que cyan y rojo dan negro*/
+}
+
+li:hover span{
+	transform: translateY(25%);
+}
+
+/*CUANDO SE HACE LA PANTALLA MÁS PEQUEÑA DE 500 px SE CAMBIA DE HORIZONTAL A VERTICAL, SE PUEDE QUITAR*/
+@media(max-width: 500px){
+	ul{
+		display: block;
+	}
+	a{
+		font-size: 10px
+	}
+}
