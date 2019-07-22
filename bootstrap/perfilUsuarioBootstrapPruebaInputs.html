@@ -1,0 +1,87 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="perfilUsuarioBootstrap.css">
+</head>
+<title>Perfil usuario bootstrap</title>
+
+<body>
+    <!-- es temporal ya que quiero anadir la barra navegacion con bootstrap -->
+    <header class="masthead">
+        <!-- imagen de muestra de usuario logueado -->
+        <img class="huevito" src="gudetama.jpg" title="usuario huevito" alt="usuario huevito" width="100" height="100">
+        <h1>Atenea</h1>
+        <p><b>Plataforma de cursos online</b></p>
+        <div class="topnav">
+            <input type="text" placeholder="Search...">
+            <button type="submit"><i class="fa fa-search"></i></button>
+        </div>
+    </header> <br>
+    <nav>
+        <a href="/home/">Página Principal</a> |
+        <a href="/cursos/">Mis Cursos</a> |
+        <a href="/novedades/">Novedades</a> |
+        <a href="/perfil/">Mi Perfil</a> |
+        <a href="/wishlist/"><i class="fas fa-heart"></i></a>
+    </nav>
+    <h2 style="text-align: center;">¡Hola Mr.Huevito!</h2>
+    <hr>
+    <div class="container">
+        <section class="main row">
+            <!-- preguntar al profe la manera de tener el borde con puntos dorado-->
+            <img class="col-md-4 img-responsive img-circle" id="usuariofoto" src="gudetama.jpg" title="foto usuario" alt="foto usuario" width="300" height="300">
+            <div class="class=" datoshuevo>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="input-group">
+                            <p><strong>Alias:</strong></p>
+                            <input type="text" class="form-control" placeholder="El huevito">
+                            <span class="input-group-btn">
+                                <button class="btn btn-default" type="button">Edit</button>
+                            </span>
+                        </div> <!--cierre input alias-->
+                        <div class="input-group">
+                            <p><strong>Nombre:</strong></p>
+                            <input type="text" class="form-control" placeholder="Huevo García García">
+                            <span class="input-group-btn">
+                                <button class="btn btn-default" type="button">Edit</button>
+                            </span>
+                        </div> <!--cierre input nombre-->
+                            <p><strong>Email:</strong></p>
+                            <input type="text" class="form-control" placeholder="huevito@gmail.com">
+                            <span class="input-group-btn">
+                                <button class="btn btn-default" type="button">Edit</button>
+                            </span>
+                        </div> <!-- cierre input email-->
+                        <div class="input-group">
+                            <p><strong>Datos de facturación</strong></p>
+                            <input type="text" class="form-control" placeholder="000-000-000">
+                            <span class="input-group-btn">
+                                <button class="btn btn-default" type="button">Edit</button>
+                            </span>
+                        </div>
+                        <!--cierre input group facturacion-->
+                    </div>
+                    <!--cierre col md 6-->
+                </div><!-- cierre row-->
+            </div>
+        </section>
+    </div><!-- cierre div class conatainer-->
+    <div class="datoshuevo2">
+        <p><strong>Mis Medallas:</strong></p>
+        <img class="medallahuevo" src="gudetama.jpg"></img>
+        <img class="medallahuevo" src="gudetama.jpg"></img>
+        <img class="medallahuevo" src="gudetama.jpg"></img>
+        <img class="medallahuevo" src="gudetama.jpg"></img>
+        <img class="medallahuevo" src="gudetama.jpg"></img><br>
+        <button class="botoneditar" type="submit">Comprar curso</button>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</body>
+
+</html>
