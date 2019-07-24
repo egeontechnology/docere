@@ -43,60 +43,112 @@
                             <span class="input-group-btn">
                                 <button class="btn btn-default" type="button">Edit</button>
                             </span>
-                        </div> <!--cierre input alias-->
+                        </div>
+                        <!--cierre input alias-->
                         <div class="input-group">
                             <p><strong>Nombre:</strong></p>
                             <input type="text" class="form-control" placeholder="Huevo García García">
                             <span class="input-group-btn">
                                 <button class="btn btn-default" type="button">Edit</button>
                             </span>
-                        </div> <!--cierre input nombre-->
-                            <p><strong>Email:</strong></p>
-                            <input type="text" class="form-control" placeholder="huevito@gmail.com">
-                            <span class="input-group-btn">
-                                <button class="btn btn-default" type="button">Edit</button>
-                            </span>
-                        </div> <!-- cierre input email-->
-                        <div class="input-group">
-                            <p><strong>Datos de facturación</strong></p>
-                            <input type="text" class="form-control" placeholder="000-000-000">
-                            <span class="input-group-btn">
-                                <button class="btn btn-default" type="button">Edit</button>
-                            </span>
                         </div>
-                        <!--cierre input group facturacion-->
+                        <!--cierre input nombre-->
+                        <p><strong>Email:</strong></p>
+                        <input type="text" class="form-control" placeholder="huevito@gmail.com">
+                        <span class="input-group-btn">
+                            <button class="btn btn-default" type="button">Edit</button>
+                        </span>
+                    </div> <!-- cierre input email-->
+                    <div class="input-group">
+                        <p><strong>Datos de facturación</strong></p>
+                        <input type="text" class="form-control" placeholder="000-000-000">
+                        <span class="input-group-btn">
+                            <button class="btn btn-default" type="button">Edit</button>
+                        </span>
                     </div>
-                    <!--cierre col md 6-->
-                </div><!-- cierre row-->
-            </div>
-        </section>
-    </div><!-- cierre div class conatainer-->
-    <div class="datoshuevo2">
-        <p><strong>Mis Medallas:</strong></p>
-        <img class="medallahuevo" src="gudetama.jpg"></img>
-        <img class="medallahuevo" src="gudetama.jpg"></img>
-        <img class="medallahuevo" src="gudetama.jpg"></img>
-        <img class="medallahuevo" src="gudetama.jpg"></img>
-        <img class="medallahuevo" src="gudetama.jpg"></img><br>
-        <button class="botoneditar" type="submit">Comprar curso</button>
+                    <!--cierre input group facturacion-->
+                </div>
+                <!--cierre col md 6-->
+            </div><!-- cierre row-->
     </div>
+    </section>
+    </div><!-- cierre div class conatainer-->
+    <div class="container">
+        <div class="row">
+            <!-- se centra en chrome pero no en explorer...-->
+            <div class="col-lg-4 col-md-4 col-sm-4 col-md-offset-4 text-center datoshuevo2">
+                <p><strong>Mis Medallas:</strong></p>
+                <img class="medallahuevo" src="gudetama.jpg"></img>
+                <img class="medallahuevo" src="gudetama.jpg"></img>
+                <img class="medallahuevo" src="gudetama.jpg"></img>
+                <img class="medallahuevo" src="gudetama.jpg"></img>
+                <img class="medallahuevo" src="gudetama.jpg"></img>
+                <button class="botoneditar" type="submit">Comprar curso</button>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <h2>Mis Clases</h2>
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+                <div class="item active">
+                    <iframe class="embed-responsive-item" title="vídeo arameo" style="width:100%" type="text/html" width="640" height="385" src="http://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="item">
+                    <iframe class="embed-responsive-item" title="vídeo arameo" style="width:100%" type="text/html" width="640" height="385" src="http://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="item">
+                    <iframe class="embed-responsive-item" title="vídeo arameo" style="width:100%" type="text/html" width="640" height="385" src="http://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+            <!-- flechas de movimiento -->
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Siguiente curso</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Curso anterior</span>
+            </a>
+        </div>
+    </div>
+    <!-- parte recomendaciones y novedades-->
     <div class="container-fluid bg-3 text-center">
         <div class="row">
-            <div class="col-md-3">
-                <p>Cursos recomendados</p>
-                <iframe class="youtube-player" title="vídeo arameo" style="width:100%" type="text/html" width="640" height="385" src="http://www.youtube.com/embed/VIDEO_ID" frameborder="0"></iframe>
+            <div class="col-md-6">
+                <p style="text-align: center">Cursos recomendados</p>
+                <div class="col-md-6" center>
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" title="vídeo arameo" style="width:100%" type="text/html" width="640" height="385" src="http://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="col-md-6" center>
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" title="vídeo arameo" style="width:100%" type="text/html" width="640" height="385" src="http://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
             </div>
-            <div class="col-md-3">
-                <p>Cursos recomendados</p>
-                <iframe class="youtube-player" title="vídeo arameo" style="width:100%" type="text/html" width="640" height="385" src="http://www.youtube.com/embed/VIDEO_ID" frameborder="0"></iframe>
-            </div>
-            <div class="col-md-3">
-                <p>Novedades</p>
-                <iframe class="youtube-player" title="vídeo arameo" style="width:100%" type="text/html" width="640" height="385" src="http://www.youtube.com/embed/VIDEO_ID" frameborder="0"></iframe>
-            </div>
-            <div class="col-md-3">
-                <p>Novedades</p>
-                <iframe class="youtube-player" title="vídeo arameo" style="width:100%" type="text/html" width="640" height="385" src="http://www.youtube.com/embed/VIDEO_ID" frameborder="0"></iframe>
+            <div class="row">
+                <div class="col-md-6">
+                    <p style="text-align: center">Novedades</p>
+                    <div class="col-md-6" center>
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item" title="vídeo arameo" style="width:100%" type="text/html" width="640" height="385" src="http://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div class="col-md-6" center>
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item" title="vídeo arameo" style="width:100%" type="text/html" width="640" height="385" src="http://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div><br><br>
