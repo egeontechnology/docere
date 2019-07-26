@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Plataforma de Cursos Online Atenea</title>
+	
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<style type="text/css">
+		.ml-1 {
+		  margin-left: ($spacer * .25) !important;
+		}
+	</style>
+
+</head>
+<body>
+	<!-- ESTO ES EL HEADER que es una barra de navegacion -->
+	<nav class="navbar navbar-default " >
+		<div class="container-fluid">
+			<!-- TODO LO QUE VA DENTRO DE ESTA CLASE ES LO QUE SE VE AUNQUE SE COLAPSE Y SE HAGA PEQUEÑO -->
+			<div class="navbar-header display-inline">
+				<!--ESTE BOTON ES LA HAMBURGUESA DE DESPLEGABLE
+					el target es la clase #navegación, que es el desplegado, y lo 
+					transforma en un menu encima del otro-->
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navegacion" aria-expanded="false">
+					<!-- sr-only es lenguaje inteno que no se ve para que el navegador sepa que es -->
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="index.html"><span><img src="imgs/atenea.png" width="20rem"></span>
+				Atenea</a>
+				<form class="navbar-form navbar-right">
+					<div class="form-inline">
+						<input type="text" class="form-control" placeholder="Busca un curso, profesor, tema...">
+						<button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></button>
+					</div>
+				</form>
+			</div>
+			<!-- EL MENU QUE SE VE CUANDO ES ANCHO ENOUGH -->
+			<div class="collapse navbar-collapse" id="navegacion">
+				<ul class="nav navbar-nav">
+			    	<li><a href=cursos.html>Mis Cursos</a></li>
+					<li><a href="perfil.html">Mi perfil</a></li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> <span class="caret"></span> Mis Cursos </a>
+						<ul class="dropdown-menu">
+							<li><a href="cursos.html">Todos mis cursos</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="#">Curso 1</a></li>
+							
+							<li><a href="#">Curso 2</a></li>
+							
+							<li><a href="#">Curso 3</a></li>
+						</ul>
+			        </li>
+				</ul>
+
+			      <ul class="nav navbar-nav navbar-right">
+			        <li><a href="#">Link</a></li>
+			        <li class="dropdown">
+			          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+			          <ul class="dropdown-menu">
+			            <li><a href="#">Action</a></li>
+			            <li><a href="#">Another action</a></li>
+			            <li><a href="#">Something else here</a></li>
+			            <li role="separator" class="divider"></li>
+			            <li><a href="#">Separated link</a></li>
+			          </ul>
+			        </li>
+			      </ul>
+			</div><!-- /.navbar-collapse -->
+		</div><!-- /.container-fluid -->
+	</nav>
+
+
+	<!--
+	<div class="inicio_cuerpo">
+		<div class="video_present">
+			<iframe src="https://www.youtube.com/embed/tgbNymZ7vqY" frameborder="0"></iframe>
+			<h2 style="padding: 0 1vw ;">¿Qué es Atenea?</h2>
+			<p style="padding: 0 1vw ;">
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut egestas risus. Aliquam dignissim luctus consectetur. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum egestas orci vel tellus porta, vitae luctus tellus fringilla. Sed sit amet turpis urna. Donec feugiat ligula non sagittis molestie. Etiam sit amet magna blandit, consectetur elit ut, interdum leo. Vivamus sagittis dictum arcu, non malesuada arcu pharetra in. Curabitur sit amet urna porttitor ipsum vulputate ultricies eu sed nisi. Curabitur molestie neque et diam vestibulum ullamcorper nec quis metus. 
+			</p>
+		</div>
+		<div class= "formulario_overviewvideos">
+			<div style="display: flex">	
+				<div class="log_in">
+					<h2>¿Ya eres usuario?</h2>
+					<label for="uname"><b>Username</b></label> <br>
+				    <input type="text" placeholder="Enter Username" name="uname" required> <br>
+
+				    <label for="psw"><b>Password</b></label> <br>
+				    <input type="password" placeholder="Enter Password" name="psw" required> <br>
+
+				    <button type="submit">Login</button> <br>
+				    <label>
+				    <input type="checkbox" checked="checked" name="remember"> Remember me
+				    </label>				
+				</div>
+				<div class="alta_user">
+					<h2>¿Aún no? Date de alta</h2>
+					<button class= "boton_user" name= "estudiante">
+						E
+					</button>
+					<button class= "boton_user" name= "profesor">
+						P
+					</button>
+					<button class= "boton_user" name= "institucion">
+						I
+					</button>	
+				</div>
+			</div>
+			<div class="ult_videos">
+				<h2>Echa un vistazo a nuestros últimos vídeos</h2>
+			</div>
+		</div>
+	</div>
+
+	<footer>
+		<nav>
+			<ul>
+				<li>
+					<a href="#" class="link_hf">Empresa<span>Empresa</span></a>
+				</li>
+				<li>
+					<a href="#" class="link_hf">Contacto<span>Contacto</span></a>
+				</li>
+				<li>
+					<a href="#" class="link_hf">Síguenos<span>Síguenos</span></a>
+				</li>
+
+
+			</ul>
+		</nav>		
+	</footer>
+	-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	
+</body>
+</html>
